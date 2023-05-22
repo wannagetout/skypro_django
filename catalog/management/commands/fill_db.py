@@ -11,10 +11,6 @@ class Command(BaseCommand):
         categories = []
         with open('data.json') as data:
             for item in json.load(data):
-                categories.append(
-                    Category(
-                        **item
-                    )
-                )
+                categories.append(Category(**item))
         Category.objects.bulk_create(categories)
 
