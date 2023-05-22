@@ -26,6 +26,7 @@ class Product(models.Model):
     product_description = models.CharField(max_length=250, verbose_name='Описание')
     product_image = models.ImageField(
         upload_to='catalog/',
+        default='catalog/default_image.jpeg',
         max_length=150,
         verbose_name='Изображение(превью)',
         **NULLABLE

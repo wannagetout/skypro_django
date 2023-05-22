@@ -1,79 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skystore</title>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Skystore</h5>
-    <nav class="ms-5">
-        <a class="p-2 btn btn-outline-primary" href="/">Каталог</a>
-        <a class="p-2 btn btn-outline-primary" href="/contacts/">Контакты</a>
-    </nav>
-</div>
+{% extends "catalog/base_layout.html" %}
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Skystore</h1>
-    <p class="lead">Skystore - это отличный вариант хранения ваших плагинов и примеров кода, который вы бы хотели
-        продать</p>
-</div>
+{% block body %}
+    <div class="row pl-4">
+        <div class="col-md-8  item-main">
+          <h3 class="pb-3 border-bottom">
+            Главная
+          </h3>
 
-<div class="container">
-    <div class="row text-center">
-        <div class="col-3">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h4 class="my-0 font-weight-normal">Удобный сервис рассылок</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$ 140</h1>
-                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
-                        <li>- Неограниченная лицензия</li>
-                        <li>- Поддержка</li>
-                        <li>- Установка на сервер</li>
-                        <li>- Получение обновлений</li>
-                    </ul>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
-                </div>
-            </div>
+          <div class="item-post">
+            <h2 class="item-post-title mb-4">Электроникс - техника для всехй</h2>
+
+            <p>Коротко обо мне</p>
+            <hr>
+            <p>Сюда вложена часть моих знаний, которые опубликованы <a href="https://github.com/wannagetout">здесь. </a></p>
+            <blockquote>
+              <p>Младший разработчик, нравится Golang, учеба и "Ведьмак"</p>
+            </blockquote>
+            <p>Не нравится фронтенд</p>
+          </div>
+
         </div>
-    </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-            <div class="col-12 col-md">
-                SkyStore
-                <small class="d-block mb-3 text-muted">&copy; 2023</small>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Категории</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Рассылки</a></li>
-                    <li><a class="text-muted" href="#">Телеграм боты</a></li>
-                    <li><a class="text-muted" href="#">Полезные утилиты</a></li>
-                    <li><a class="text-muted" href="#">Веб-приложения</a></li>
-                    <li><a class="text-muted" href="#">Микросервисы</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Дополнительно</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Мы пишем</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>О нас</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="/contacts/">Контакты</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</div>
+        <aside class="col-md-4 item-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Информация</h4>
+            <p class="mb-0">Все ссылки кликабельны</p>
+          </div>
 
-<script src="/static/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <div class="p-3">
+            <h4 class="font-italic">Личные ссылки</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/wannagetout">GitHub</a></li>
+              <li><a href="https://vk.com/wannaget_out">VK</a></li>
+              <li><a href="t.me/">Telegram</a></li>
+            </ol>
+          </div>
+        </aside>
+
+      </div>
+
+    </main>
+{% endblock %}
