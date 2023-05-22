@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category_name": "Ноутбуки",
+    "category_description": "Ноутбуки и комплктующие"
+  },
+  {
+    "id": 2,
+    "category_name": "Смартфоны",
+    "category_description": "Смартоны и акссесуары"
+  },
+  {
+    "id": 3,
+    "category_name": "Фитнес-браслеты",
+    "category_description": "Не смарт-часы"
+  },
+  {
+    "id": 4,
+    "category_name": "Серверное оборудование",
+    "category_description": "Почти как у Яндекс"
+  }
+]
